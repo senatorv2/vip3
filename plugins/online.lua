@@ -1,12 +1,11 @@
 ﻿local function run(msg, matches)
-tg.sendMessage(msg.chat_id, 0, 0,  "<b>online</b>", 0)
+tg.sendMessage(msg.chat_id, 0, 0,  "<b>سناتور همیشه انلاینه</b>", 0)
 end
 return {
   patterns = {
-	"^[!#/]([Mm][Aa][Ff][Ii][Aa])$",
+	"^[!#/]([Ss][Ee][Nn][Aa][Tt][Oo][Rr])$",
   },
   run = run
 }
 
---@mafia_cli
---https://github.com/mafia-007
+--@Lv_t_m
