@@ -521,12 +521,6 @@ tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   end
   
-endlocal expiretime = redis:hget('expiretime', msg.chat_id_)    
-  local expire = ''  if not expiretime then  
-    expire = expire..'Unlimited'  else   
-    local now = tonumber(os.time())   
-    expire =  expire..math.floor((tonumber(expiretime) - tonumber(now)) / 86400) + 1 
-  end
 local function group_settings(msg, target)
 local group = load_data('bot/group.json')
 pm = '<b>SuperGroup settings</b> \n <code>💈💈💈💈💈💈💈💈💈</code>'
