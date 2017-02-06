@@ -520,7 +520,8 @@ tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
     pm= '<b>Documents</b> 🚥 <b>unmuted</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   end
-  
+ end
+
 local function group_settings(msg, target)
 local group = load_data('bot/group.json')
 pm = '<b>SuperGroup settings</b> \n <code>💈💈💈💈💈💈💈💈💈</code>'
