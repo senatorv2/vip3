@@ -5,7 +5,7 @@ local group = load_data('bot/group.json')
     pm = '<b>Link</b> <b>🚥</b> <b>lock</b>\n  @senator_tea '
   tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
 else
-    group[tostring(target)]['settings']['lock_link'] = '✅'
+    group[tostring(target)]['settings']['lock_link'] = 'yes'
     save_data(_config.group.data, group)
     pm = '<b>Link</b> <b>🚥</b> <b>locked</b>\n @senator_tea '
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
@@ -18,7 +18,7 @@ local group = load_data('bot/group.json')
     pm = '<b>username</b> <b>🚥</b> <b>lock</b>\n  @senator_tea '
   tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
 else
-    group[tostring(target)]['settings']['lock_username'] = '✅'
+    group[tostring(target)]['settings']['lock_username'] = 'yes'
     save_data(_config.group.data, group)
     pm = '<b>username</b> <b>🚥</b> <b>locked</b>\n  @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
@@ -31,7 +31,7 @@ local group = load_data('bot/group.json')
     pm = '<b>Edite</b> <b>🚥</b> <b>lock</b>\n  @senator_tea '
   tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
 else
-    group[tostring(target)]['settings']['lock_edit'] = '✅'
+    group[tostring(target)]['settings']['lock_edit'] = 'yes'
     save_data(_config.group.data, group)
     pm = '<b>Edite</b> <b>🚥</b> <b>locked</b>\n  @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
@@ -44,7 +44,7 @@ local group = load_data('bot/group.json')
     pm = '<b>Fwd</b> <b>🚥</b> <b>lock</b>\n  @senator_tea '
   tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
 else
-    group[tostring(target)]['settings']['lock_fwd'] = '✅'
+    group[tostring(target)]['settings']['lock_fwd'] = 'yes'
     save_data(_config.group.data, group)
     pm = '<b>Fwd</b> <b>🚥</b> <b>locked</b>\n  @senator_tea '
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
@@ -57,7 +57,7 @@ local group = load_data('bot/group.json')
     pm = '<b>Spem</b> <b>🚥</b> <b>lock</b>\n @senator_tea '
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   else
-    group[tostring(target)]['settings']['lock_spam'] = '✅'
+    group[tostring(target)]['settings']['lock_spam'] = 'yes'
     save_data(_config.group.data, group)
     pm= '<b>Spem</b> <b>🚥</b> <b>locked</b>\n  @senator_tea '
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
@@ -70,7 +70,7 @@ local group = load_data('bot/group.json')
     pm = '<b>sticker</b> <b>🚥</b> <b>lock</b>\n  @senator_tea '
   tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
 else
-    group[tostring(target)]['settings']['lock_sticker'] = '✅'
+    group[tostring(target)]['settings']['lock_sticker'] = 'yes'
     save_data(_config.group.data, group)
     pm = '<b>sticker</b> <b>🚥</b> <b>locked</b>\n  @senator_tea '
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
@@ -83,7 +83,7 @@ local group = load_data('bot/group.json')
     pm = '<b>english</b> <b>🚥</b> <b>lock</b>\n @senator_tea '
   tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
 else
-    group[tostring(target)]['settings']['lock_english'] = '✅'
+    group[tostring(target)]['settings']['lock_english'] = 'yes'
     save_data(_config.group.data, group)
     pm = '<b>english</b> <b>🚥</b> <b>locked</b>\n  @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
@@ -96,7 +96,7 @@ local group = load_data('bot/group.json')
     pm = '<b>persian</b> <b>🚥</b> <b>lock</b>\n  @senator_tea '
   tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
 else
-    group[tostring(target)]['settings']['lock_persian'] = '✅'
+    group[tostring(target)]['settings']['lock_persian'] = 'yes'
     save_data(_config.group.data, group)
     pm = '<b>persian</b> <b>🚥</b> <b>locked</b>\n  @senator_tea '
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
@@ -109,7 +109,7 @@ local group = load_data('bot/group.json')
     pm = '<b>tgservice</b> <b>🚥</b> <b>lock</b>\n  @senator_tea '
   tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
 else
-    group[tostring(target)]['settings']['lock_tgservice'] = '✅'
+    group[tostring(target)]['settings']['lock_tgservice'] = 'yes'
     save_data(_config.group.data, group)
     pm = '<b>tgservice</b> <b>🚥</b> <b>locked</b>\n  @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
@@ -122,7 +122,7 @@ local group = load_data('bot/group.json')
     pm = '<b>tag</b> <b>🚥</b> <b>lock</b>\n  @senator_tea'
   tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
 else
-    group[tostring(target)]['settings']['lock_tag'] = '✅'
+    group[tostring(target)]['settings']['lock_tag'] = 'yes'
     save_data(_config.group.data, group)
     pm = '<b>tag</b> <b>🚥</b> <b>locked</b>\n  @senator_tea '
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
@@ -135,7 +135,7 @@ local group = load_data('bot/group.json')
     pm = '<b>Inline</b> <b>➣➣</b> <b>lock</b>\n  @senator_tea '
   tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
 else
-    group[tostring(target)]['settings']['lock_inline'] = '✅'
+    group[tostring(target)]['settings']['lock_inline'] = 'yes'
     save_data(_config.group.data, group)
     pm = '<b>Inline</b> <b>🚥</b> <b>locked</b>\n  @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
@@ -148,7 +148,7 @@ local group = load_data('bot/group.json')
     pm = '<b>Community</b> <b>🚥</b> <b>lock</b>\n  @senator_tea'
   tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
 else
-    group[tostring(target)]['settings']['lock_community'] = '✅'
+    group[tostring(target)]['settings']['lock_community'] = 'yes'
     save_data(_config.group.data, group)
     pm = '<b>Community</b> <b>🚥</b> <b>locked</b>\n  @senator_tea '
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
@@ -162,7 +162,7 @@ local group = load_data('bot/group.json')
     pm = '<b>Link</b> <b>🚥</b> <b>unlock</b>\n  @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   else
-    group[tostring(target)]['settings']['lock_link'] = '❎'
+    group[tostring(target)]['settings']['lock_link'] = 'no'
     save_data(_config.group.data, group)
     pm= '<b>Link</b> <b>🚥</b> <b>unlocked</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
@@ -175,7 +175,7 @@ local group = load_data('bot/group.json')
     pm = '<b>username</b> <b>🚥</b> <b>unlock</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   else
-    group[tostring(target)]['settings']['lock_username'] = '❎'
+    group[tostring(target)]['settings']['lock_username'] = 'no'
     save_data(_config.group.data, group)
     pm= '<b>username</b> <b>🚥</b> <b>unlocked</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
@@ -188,7 +188,7 @@ local group = load_data('bot/group.json')
     pm = '<b>Edite</b> <b>🚥</b> <b>unlock</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   else
-    group[tostring(target)]['settings']['lock_edit'] = '❎'
+    group[tostring(target)]['settings']['lock_edit'] = 'no'
     save_data(_config.group.data, group)
     pm= '<b>Edite</b> <b>🚥</b> <b>unlocked</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
@@ -201,7 +201,7 @@ local group = load_data('bot/group.json')
     pm = '<b>Fwd</b> <b>🚥</b> <b>unlock</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   else
-    group[tostring(target)]['settings']['lock_fwd'] = '❎'
+    group[tostring(target)]['settings']['lock_fwd'] = 'no'
     save_data(_config.group.data, group)
     pm= '<b>Fwd</b> <b>🚥</b> <b>unlocked</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
@@ -214,7 +214,7 @@ local group = load_data('bot/group.json')
     pm = '<b>Spam</b> <b>🚥</b> <b>unlock</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   else
-    group[tostring(target)]['settings']['lock_spam'] = '❎'
+    group[tostring(target)]['settings']['lock_spam'] = 'no'
     save_data(_config.group.data, group)
     pm= '<b>Spam</b> <b>🚥</b> <b>unlocked</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
@@ -227,7 +227,7 @@ local group = load_data('bot/group.json')
     pm = '<b>sticker</b> <b>🚥</b> <b>unlock</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   else
-    group[tostring(target)]['settings']['lock_sticker'] = '❎'
+    group[tostring(target)]['settings']['lock_sticker'] = 'no'
     save_data(_config.group.data, group)
     pm= '<b>sticker</b> <b>🚥</b> <b>unlocked</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
@@ -240,7 +240,7 @@ local group = load_data('bot/group.json')
     pm = '<b>english</b> <b>🚥</b> <b>unlock</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   else
-    group[tostring(target)]['settings']['lock_english'] = '❎'
+    group[tostring(target)]['settings']['lock_english'] = 'no'
     save_data(_config.group.data, group)
     pm= '<b>english</b> <b>🚥</b> <b>unlocked</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
@@ -253,7 +253,7 @@ local group = load_data('bot/group.json')
     pm = '<b>persian</b> <b>🚥</b> <b>unlock</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   else
-    group[tostring(target)]['settings']['lock_persian'] = '❎'
+    group[tostring(target)]['settings']['lock_persian'] = 'no'
     save_data(_config.group.data, group)
     pm= '<b>persian</b> <b>🚥</b> <b>unlocked</b>\n @senator_tem'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
@@ -266,7 +266,7 @@ local group = load_data('bot/group.json')
     pm = '<b>tgservice</b> <b>🚥</b> <b>unlock</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   else
-    group[tostring(target)]['settings']['lock_tgservice'] = '❎'
+    group[tostring(target)]['settings']['lock_tgservice'] = 'no'
     save_data(_config.group.data, group)
     pm= '<b>tgservice</b> <b>🚥</b> <b>unlocked</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
@@ -279,7 +279,7 @@ local group = load_data('bot/group.json')
     pm = '<b>tag</b> <b>🚥</b> <b>unlock</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   else
-    group[tostring(target)]['settings']['lock_tag'] = '❎'
+    group[tostring(target)]['settings']['lock_tag'] = 'no'
     save_data(_config.group.data, group)
     pm= '<b>tag</b> <b>🚥</b> <b>unlocked</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
@@ -292,7 +292,7 @@ local group = load_data('bot/group.json')
     pm = '<b>Inline</b> <b>🚥</b> <b>unlock</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   else
-    group[tostring(target)]['settings']['lock_inline'] = '❎'
+    group[tostring(target)]['settings']['lock_inline'] = 'no'
     save_data(_config.group.data, group)
     pm= '<b>Inline</b> <b>🚥</b> <b>unlocked</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
@@ -305,7 +305,7 @@ local group = load_data('bot/group.json')
     pm = '<b>Community</b> <b>🚥</b> <b>unlock</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   else
-    group[tostring(target)]['settings']['lock_community'] = '❎'
+    group[tostring(target)]['settings']['lock_community'] = 'no'
     save_data(_config.group.data, group)
     pm= '<b>Community</b> <b>🚥</b> <b>unlocked</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
@@ -320,7 +320,7 @@ local group = load_data('bot/group.json')
     pm = '<b>All</b> 🚥 <b>mute</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   else
-    group[tostring(target)]['settings']['mute_all'] = '✅'
+    group[tostring(target)]['settings']['mute_all'] = 'yes'
     save_data(_config.group.data, group)
     pm= '<b>All</b> 🚥 <b>muted</b>\n@senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
@@ -333,7 +333,7 @@ local group = load_data('bot/group.json')
     pm = '<b>All</b> 🚥 <b>unmute</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   else
-    group[tostring(target)]['settings']['mute_all'] = '❎'
+    group[tostring(target)]['settings']['mute_all'] = 'no'
     save_data(_config.group.data, group)
     pm= '<b>All</b> 🚥 <b>unmuted</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
@@ -346,7 +346,7 @@ local group = load_data('bot/group.json')
     pm = '<b>Text</b> 🚥 <b>mute</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   else
-    group[tostring(target)]['settings']['mute_text'] = '✅'
+    group[tostring(target)]['settings']['mute_text'] = 'yes'
     save_data(_config.group.data, group)
     pm= '<b>Text</b> 🚥 <b>muted</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
@@ -359,7 +359,7 @@ local group = load_data('bot/group.json')
     pm = '<b>Text</b> 🚥 <b>unmute</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   else
-    group[tostring(target)]['settings']['mute_text'] = '❎'
+    group[tostring(target)]['settings']['mute_text'] = 'no'
     save_data(_config.group.data, group)
     pm= '<b>Text</b> 🚥 <b>unmuted</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
@@ -372,7 +372,7 @@ local group = load_data('bot/group.json')
     pm = '<b>Photo</b> 🚥 <b>unmute</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   else
-    group[tostring(target)]['settings']['mute_photo'] = '✅'
+    group[tostring(target)]['settings']['mute_photo'] = 'yes'
     save_data(_config.group.data, group)
     pm= '<b>Photo</b> 🚥 <b>muted</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
@@ -385,7 +385,7 @@ local group = load_data('bot/group.json')
     pm = '<b>Photo</b> 🚥 <b>unmute</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   else
-    group[tostring(target)]['settings']['mute_photo'] = '❎'
+    group[tostring(target)]['settings']['mute_photo'] = 'no'
     save_data(_config.group.data, group)
     pm= '<b>Photo</b> 🚥 <b>unmuted</b>\n  @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
@@ -398,7 +398,7 @@ local group = load_data('bot/group.json')
     pm = '<b>Video</b> 🚥 <b>mute</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   else
-    group[tostring(target)]['settings']['mute_video'] = '✅'
+    group[tostring(target)]['settings']['mute_video'] = 'yes'
     save_data(_config.group.data, group)
     pm= '<b>Video</b> 🚥 <b>muted</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
@@ -411,7 +411,7 @@ local group = load_data('bot/group.json')
     pm = '<b>Video</b> 🚥 <b>unmute</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   else
-    group[tostring(target)]['settings']['mute_video'] = '❎'
+    group[tostring(target)]['settings']['mute_video'] = 'no'
     save_data(_config.group.data, group)
     pm= '<b>Video</b> 🚥 <b>unmuted</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
@@ -424,7 +424,7 @@ local group = load_data('bot/group.json')
     pm = '<b>Gifs</b> 🚥 <b>mute</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   else
-    group[tostring(target)]['settings']['mute_gif'] = '✅'
+    group[tostring(target)]['settings']['mute_gif'] = 'yes'
     save_data(_config.group.data, group)
     pm= '<b>Gifs</b> 🚥 <b>muted</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
@@ -437,7 +437,7 @@ local group = load_data('bot/group.json')
     pm = '<b>Gifs</b> 🚥 <b>unmute</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   else
-    group[tostring(target)]['settings']['mute_gif'] = '❎'
+    group[tostring(target)]['settings']['mute_gif'] = 'no'
     save_data(_config.group.data, group)
     pm= '<b>Gifs</b> 🚥 <b>unmuted</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
@@ -450,7 +450,7 @@ local group = load_data('bot/group.json')
     pm = '<b>Voice</b> 🚥 <b>mute</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   else
-    group[tostring(target)]['settings']['mute_voice'] = '✅'
+    group[tostring(target)]['settings']['mute_voice'] = 'yes'
     save_data(_config.group.data, group)
     pm= '<b>Voice</b> 🚥 <b>muted</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
@@ -463,7 +463,7 @@ local group = load_data('bot/group.json')
     pm = '<b>Voice</b> 🚥 <b>unmute</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   else
-    group[tostring(target)]['settings']['mute_voice'] = '❎'
+    group[tostring(target)]['settings']['mute_voice'] = 'no'
     save_data(_config.group.data, group)
     pm= '<b>Voice</b> 🚥 <b>unmuted</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
@@ -476,7 +476,7 @@ local group = load_data('bot/group.json')
     pm = '<b>Audio</b> 🚥 <b>mute</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   else
-    group[tostring(target)]['settings']['mute_audio'] = '✅'
+    group[tostring(target)]['settings']['mute_audio'] = 'yes'
     save_data(_config.group.data, group)
     pm= '<b>Audio</b> 🚥 <b>muted</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
@@ -489,7 +489,7 @@ local group = load_data('bot/group.json')
     pm = '<b>Audio</b> 🚥 <b>unmute</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   else
-    group[tostring(target)]['settings']['mute_audio'] = '❎'
+    group[tostring(target)]['settings']['mute_audio'] = 'no'
     save_data(_config.group.data, group)
     pm= '<b>Audio</b> 🚥 <b>unmuted</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
@@ -502,7 +502,7 @@ local group = load_data('bot/group.json')
     pm = '<b>Documents</b> ➣➣ <b>mute</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   else
-    group[tostring(target)]['settings']['mute_document'] = '✅'
+    group[tostring(target)]['settings']['mute_document'] = 'yes'
     save_data(_config.group.data, group)
     pm= '<b>Documents</b> 🚥 <b>muted</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
@@ -515,7 +515,7 @@ local group = load_data('bot/group.json')
     pm = '<b>Documents</b> 🚥 <b>unmute</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   else
-    group[tostring(target)]['settings']['mute_document'] = '❎'
+    group[tostring(target)]['settings']['mute_document'] = 'no'
     save_data(_config.group.data, group)
     pm= '<b>Documents</b> 🚥 <b>unmuted</b>\n @senator_tea'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
