@@ -23,8 +23,8 @@ do local _ = {
   },
   sudo_users = {
     170146015, --sudo
-    0,
-    0
+    204507468,
+    196568905
   },
 robot = {
     010101010,--bot
@@ -34,5 +34,3 @@ robot = {
 return _
 end
 
---@mafia_cli
---https://github.com/mafia-007
