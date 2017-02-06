@@ -539,7 +539,6 @@ pm = pm..'\n🏮 <code>➣</code> <b>Lock</b> <code>➣</code> <b>Tag</b> <code>
 pm = pm..'\n🏮 <code>➣</code> <b>Lock</b> <code>➣</code> <b>Inline</b> <code>»</code> '..group[tostring(target)]['settings']['lock_inline']..''
 pm = pm..'\n🏮 <code>➣</code> <b>Lock</b> <code>➣</code> <b>Commun</b> <code>»</code> '..group[tostring(target)]['settings']['lock_community']..''
 pm = pm..'\n🏮 <code>➣</code> <b>mute</b> <code>➣</code> <b>All</b> <code>»</code> '..group[tostring(target)]['settings']['mute_all']..''
-pm = pm..'\n💈💈💈<code>➣</code> </b>mute list</b> <code>➣</code>💈💈💈..''
 pm = pm..'\n🏮 <code>➣</code> <b>mute</b> <code>➣</code> <b>Text</b> <code>»</code> '..group[tostring(target)]['settings']['mute_text']..''
 pm = pm..'\n🏮 <code>➣</code> <b>mute</b> <code>➣</code> <b>Photo</b> <code>»</code> '..group[tostring(target)]['settings']['mute_photo']..''
 pm = pm..'\n🏮 <code>➣</code> <b>mute</b> <code>➣</code> <b>Video</b> <code>»</code> '..group[tostring(target)]['settings']['mute_video']..''
