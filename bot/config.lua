@@ -9,7 +9,7 @@ do local _ = {
     "online",
     "plugins",
     "admin",
-    "tools",
+    "id",
     "del",
     "clean",
     "expiretime",
