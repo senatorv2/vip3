@@ -11,3 +11,4 @@ return {
   },
   run = run
 }
+--channel : @mafia_cli
