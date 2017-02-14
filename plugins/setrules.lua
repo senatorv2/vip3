@@ -17,4 +17,4 @@ return {
  },
   run = run
 }
---@mafia_cli
+--@senator_tea
