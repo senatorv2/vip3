@@ -8,39 +8,39 @@ local function pre_process(msg)
 		timetoexpire = math.floor((tonumber(expiretime) - tonumber(now)) / 86400) + 1
 		if tonumber("0") > tonumber(timetoexpire) and not is_sudo(msg) then
 		if msg.text:match('/') then
-			return tg.sendMessage(msg.chat_id_, 0, 1, '<b>ExpireTime Ended</b>\n @senator_tea', 1, 'html')
+			return tg.sendMessage(msg.chat_id_, 0, 1, '<b>ExpireTime Ended</b>\n*Channel:* @senator_tea', 1, 'html')
 		else
 			return
 		end
 	end
 	if tonumber(timetoexpire) == 0 then
 		if redis:hget('expires0',msg.chat_id_) then end
-		tg.sendMessage(msg.chat_id_, 0, 1, '<b>Only 0 Days Please Extend HureyUp</b>\n @senator_tea', 1, 'html')
+		tg.sendMessage(msg.chat_id_, 0, 1, '<b>Only 0 Days Please Extend HureyUp</b>\n*Channel:* @senator_tea', 1, 'html')
 		redis:hset('expires0',msg.chat_id_,'5')
 	end
 	if tonumber(timetoexpire) == 1 then
 		if redis:hget('expires1',msg.chat_id_) then end
-		tg.sendMessage(msg.chat_id_, 0, 1, '<b>Only And Only 1 Days Please Extend</b>\n @senator_tea', 1, 'html')
+		tg.sendMessage(msg.chat_id_, 0, 1, '<b>Only And Only 1 Days Please Extend</b>\n*Channel:* @senator_tea', 1, 'html')
 		redis:hset('expires1',msg.chat_id_,'5')
 	end
 	if tonumber(timetoexpire) == 2 then
 		if redis:hget('expires2',msg.chat_id_) then end
-		tg.sendMessage(msg.chat_id_, 0, 1, 'Only 2 Days Please Extend</b>\n @senator_tea', 1, 'html')
+		tg.sendMessage(msg.chat_id_, 0, 1, 'Only 2 Days Please Extend</b>\n*Channel:* @senator_tea', 1, 'html')
 		redis:hset('expires2',msg.chat_id_,'5')
 	end
 	if tonumber(timetoexpire) == 3 then
 		if redis:hget('expires3',msg.chat_id_) then end
-		tg.sendMessage(msg.chat_id_, 0, 1, '<b>Only 3 Days Please Extend</b>\n @senator_tea', 1, 'html')
+		tg.sendMessage(msg.chat_id_, 0, 1, '<b>Only 3 Days Please Extend</b>\n*Channel:* @senator_tea', 1, 'html')
 		redis:hset('expires3',msg.chat_id_,'5')
 	end
 	if tonumber(timetoexpire) == 4 then
 		if redis:hget('expires4',msg.chat_id_) then end
-		tg.sendMessage(msg.chat_id_, 0, 1, '<b>Only 4 Days Please Extend</b>\n @senator_tea', 1, 'html')
+		tg.sendMessage(msg.chat_id_, 0, 1, '<b>Only 4 Days Please Extend</b>\n*Channel:* @senator_tea', 1, 'html')
 		redis:hset('expires4',msg.chat_id_,'5')
 	end
 	if tonumber(timetoexpire) == 5 then
 		if redis:hget('expires5',msg.chat_id_) then end
-		tg.sendMessage(msg.chat_id_, 0, 1, '<b>Only 5 Days Please Extend</b>\n @senator_tea', 1, 'html')
+		tg.sendMessage(msg.chat_id_, 0, 1, '<b>Only 5 Days Please Extend</b>\n*Channel:* @senator_tea', 1, 'html')
 		redis:hset('expires5',msg.chat_id_,'5')
 	end
 end
@@ -74,4 +74,4 @@ return {
 }
 
 
---channel : @mafia_cli
+--channel : @senator_tea
