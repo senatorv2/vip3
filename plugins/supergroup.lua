@@ -51,18 +51,7 @@ else
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   end
 end
-local function lock_group_location(msg, target)
-local group = load_data('bot/group.json')
-  local group_location_lock = group[tostring(target)]['settings']['lock_location']
-  if group_location_lock == 'yes' then
-    pm = '<b>Location</b> <b>💈💈</b> <b>lock</b>\n*Channel:* @senator_tea'
-  tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
-else
-    group[tostring(target)]['settings']['lock_location'] = 'yes'
-    save_data(_config.group.data, group)
-    pm = '<b>Location </b> <b>💈💈</b> <b>locked</b>'
-tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
-  end
+
 local function lock_group_game(msg, target)
 local group = load_data('bot/group.json')
   local group_game_lock = group[tostring(target)]['settings']['lock_game']
@@ -274,19 +263,7 @@ tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   end
 end
-local function unlock_group_location(msg, target)
-local group = load_data('bot/group.json')
-  local group_location_lock = group[tostring(target)]['settings']['lock_location']
-  if group_location_lock == 'no' then
-    pm = '<b>Location</b> <b>💈💈</b> <b>unlock</b>\n*Channel:* @senator_tea'
-tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
-  else
-    group[tostring(target)]['settings']['lock_location'] = 'no'
-    save_data(_config.group.data, group)
-    pm= '<b>Location</b> <b>💈💈</b> <b>unlocked</b>\n*Channel:* @senator_tea'
-tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
-  end
-end
+
 local function unlock_group_game(msg, target)
 local group = load_data('bot/group.json')
   local group_game_lock = group[tostring(target)]['settings']['lock_game']
@@ -667,7 +644,6 @@ pm = pm..'\n🏮 <code>➣</code> <b>Lock</b> <code>➣</code> <b>Spam</b> <code
 pm = pm..'\n🏮 <code>➣</code> <b>Lock</b> <code>➣</code> <b>Sticker</b> <code>»</code>'..group[tostring(target)]['settings']['lock_sticker']..''
 pm = pm..'\n🏮 <code>➣</code> <b>Lock</b> <code>➣</code> <b>fosh</b> <code>»</code>'..group[tostring(target)]['settings']['lock_fosh']..''
 pm = pm..'\n🏮 <code>➣</code> <b>Lock</b> <code>➣</code> <b>contact</b> <code>»</code>'..group[tostring(target)]['settings']['lock_contact']..''
-pm = pm..'\n🏮 <code>➣</code> <b>Lock</b> <code>➣</code> <b>location</b> <code>»</code>'..group[tostring(target)]['settings']['lock_location']..''
 pm = pm..'\n🏮 <code>➣</code> <b>Lock</b> <code>➣</code> <b>bot</b> <code>»</code>'..group[tostring(target)]['settings']['lock_bot']..''
 pm = pm..'\n🏮 <code>➣</code> <b>Lock</b> <code>➣</code> <b>Eng</b> <code>»</code> '..group[tostring(target)]['settings']['lock_english']..''
 pm = pm..'\n🏮 <code>➣</code> <b>Lock</b> <code>➣</code> <b>Far</b> <code>»</code> '..group[tostring(target)]['settings']['lock_persian']..''
