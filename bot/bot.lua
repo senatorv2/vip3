@@ -447,6 +447,27 @@ function tdcli_update_callback(data)
         if msg.content_.caption_ then
           msg.text = msg.text .. msg.content_.caption_
         end
+        elseif msg.content_.document_ then
+        msg.text = "!!!document:"
+        if msg.content_.caption_ then
+          msg.text = msg.text .. msg.content_.caption_
+        end
+        
+      elseif msg.content_.contact_ then
+        msg.text = "!!!contact:"
+	if msg.content_.caption_ then
+          msg.text = msg.text .. msg.content_.caption_
+        end			
+      elseif msg.content_.location_ then
+        msg.text = "!!!location:"  
+	if msg.content_.caption_ then
+          msg.text = msg.text .. msg.content_.caption_
+        end			
+      elseif msg.content_.game_ then
+        msg.text = "!!!game:"
+	if msg.content_.caption_ then
+          msg.text = msg.text .. msg.content_.caption_
+        end
       elseif msg.content_.video_ then
         msg.text = "!!!video:"
         if msg.content_.caption_ then
@@ -544,5 +565,4 @@ now = os.time()
 math.randomseed(now)
 started = false
 
---@mafia_cli
---https://github.com/mafia-007
+--@senator_tea
