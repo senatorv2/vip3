@@ -3,7 +3,7 @@ tg.sendMessage(msg.chat_id, 0, 0,  "\n🔺نرخ گروه با بات سناتو
 end
 return {
   patterns = {
-	"^سناتور$",
+	"^[Ss]enator$",
   },
   run = run
 }
