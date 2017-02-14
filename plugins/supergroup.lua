@@ -674,7 +674,7 @@ elseif matches[1] == 'lock' then
 if matches[2] == 'links' then
 lock_group_links(msg, msg.chat_id)
 elseif matches[2] == 'edit' then
-lock_group_bot(msg, msg.chat_id)
+lock_group_edit(msg, msg.chat_id)
 elseif matches[2] == 'fwd' then
 lock_group_fwd(msg, msg.chat_id)
 elseif matches[2] == 'bot' then
