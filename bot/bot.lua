@@ -447,12 +447,6 @@ function tdcli_update_callback(data)
         if msg.content_.caption_ then
           msg.text = msg.text .. msg.content_.caption_
         end
-        elseif msg.content_.document_ then
-        msg.text = "!!!document:"
-        if msg.content_.caption_ then
-          msg.text = msg.text .. msg.content_.caption_
-        end
-        
       elseif msg.content_.contact_ then
         msg.text = "!!!contact:"
 	if msg.content_.caption_ then
