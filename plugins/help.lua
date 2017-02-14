@@ -15,7 +15,6 @@ pm1 = [[🔴⚜🔐help bot senator🔐⚜🔴
 🔹!lock tag (#)  =>قفل تگ 
 🔹!lock tgservice  =>قفل سرویس 
 🔹!lock contact =>قفل شماره 
-🔹!lock location => قفل موقعیت مکانی 
 🔹!lock game => قفل بازی تحت وب 
 🔹!mute all  => ممنوعیت گپ
 🔹!mute audio  =>ممنوعیت آهنگ
@@ -42,7 +41,7 @@ pm1 = [[🔴⚜🔐help bot senator🔐⚜🔴
 🔻!id [reply-username] =>دریافت ایدی عددی فرد
 🔺!kick [id-username-reply] =>اخراج فرد
 💈💈💈💈💈💈💈🔰
-]]
+\n*Channel:* @senator_tea]]
   tg.sendMessage(msg.chat_id_, 0, 1, pm1, 1, 'md')
 end
 end
