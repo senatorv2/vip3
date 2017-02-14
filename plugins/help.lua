@@ -41,7 +41,7 @@ pm1 = [[🔴⚜🔐help bot senator🔐⚜🔴
 🔻!id [reply-username] =>دریافت ایدی عددی فرد
 🔺!kick [id-username-reply] =>اخراج فرد
 💈💈💈💈💈💈💈🔰
-\n*Channel:* @senator_tea]]
+]]
   tg.sendMessage(msg.chat_id_, 0, 1, pm1, 1, 'md')
 end
 end
