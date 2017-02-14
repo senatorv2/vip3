@@ -208,5 +208,4 @@ return {
   },
   run = run
 }
---@mafia_cli
---https://github.com/mafia-007
+--@senator_tea
