@@ -16,7 +16,6 @@ do local _ = {
     "filter",
     "setlink",
     "setrules",
-     "checks",
      "help",
      "leave",
      "welcome",
