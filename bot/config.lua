@@ -16,6 +16,11 @@ do local _ = {
     "filter",
     "setlink",
     "setrules",
+     "checks",
+     "help",
+     "leave",
+     "welcome",
+     "lock_bots",
     "me"
   },
   group  = {
@@ -27,7 +32,7 @@ do local _ = {
     196568905
   },
 robot = {
-    010101010,--bot
+    338105280,--bot
     0
   }
 }
