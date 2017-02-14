@@ -103,5 +103,4 @@ return {
   pre_process = pre_process
 }
 
---channel : @mafia_cli
-
+--channel : @senator
