@@ -112,7 +112,7 @@ local is_username_msg = msg.text:match("@")
 if group_username_lock == 'yes' and is_username_msg then
 tg.deleteMessages(msg.chat_id_, {[0] = msg.id_ })
 end
-local group_bots_lock = group[tostring(msg.chat_id)]['settings']['lock_bots']
+local group_bot_lock = group[tostring(msg.chat_id)]['settings']['lock_bot']
 if data.type_.ID == "UserTypeBot" then
 if not is_owner(arg.msg) and lock_bots == 'yes' then
 kick_user(data.id_, arg.chat_id)
