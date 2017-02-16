@@ -10,8 +10,8 @@ function INFO (i, naji)
 		else 
 			name2 = naji.user_.first_name_
 		end
-		local pm = '*I👤I* '..check_markdown(name2)..'\n🆔 *'..naji.user_.id_..'*\n'..check_markdown(username2)
-		local pm1 = 'I👤I '..name2..'\n🆔 '..naji.user_.id_..'\n'..username2
+		local pm = '*I👤I* '..check_markdown(name2)..'\nid *'..naji.user_.id_..'*\n'..check_markdown(username2)
+		local pm1 = 'I👤I '..name2..'\nid '..naji.user_.id_..'\n'..username2
 		if naji.user_.profile_photo_ then 
 			tdcli_function ({ID = "GetUserProfilePhotos",user_id_ = naji.user_.id_,offset_ = 0,limit_ = 1},
 			 function (i, naji)
@@ -82,4 +82,6 @@ return {
 patterns ={
 "^[!/#]([Ii][Nn][Ff][Oo]) (.*)$",
 "^[!/#]([Ii][Nn][Ff][Oo])$",
+"^!!!edit:[!/#]([Ii][Nn][Ff][Oo]) (.*)$",
+"^!!!edit:[!/#]([Ii][Nn][Ff][Oo])$",
 },run=run}
